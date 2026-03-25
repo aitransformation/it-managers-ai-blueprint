@@ -8,6 +8,7 @@ Deploying AI on a messy, ungoverned IT estate is how you get messy, ungoverned A
 
 ## What this step covers
 
+- Deploying the IT Manager's supporting AI agent in a governed way
 - Drafting and approving the core policy set
 - Building data hygiene and quality foundations
 - Setting up governance frameworks
@@ -47,7 +48,19 @@ You need:
 
 ## The work
 
-### 1. Draft and approve the policies
+### 1. Deploy the supporting agent properly
+Set up the IT Manager's AI agent early in this step. The goal is not to let the agent run wild. The goal is to give the IT Manager a governed assistant that can help with inventories, documentation, policy drafts, research summaries, implementation checklists, and review prep.
+
+That means:
+- local-first by default
+- clear access boundaries
+- Open Brain context enabled
+- prompt-injection screening on inbound third-party content
+- anti-AI quality checks on drafted output before it is treated as finished
+
+The agent should support the blueprint. It should not sit outside it.
+
+### 2. Draft and approve the policies
 Start with the Acceptable Use Policy AI Addendum. This is the single most important document for data safety. It tells every person in the organisation what they can and cannot do with AI tools. It needs leadership approval and a staff briefing before any AI capability goes live.
 
 Then draft:
@@ -57,19 +70,19 @@ Then draft:
 
 These do not need to be long. They need to be clear and specific.
 
-### 2. Brief all staff on the AUP addendum
+### 3. Brief all staff on the AUP addendum
 In person. Not by email. The IT Manager or a senior sponsor explains the rules, why they exist, and what happens if they are breached. Allow genuine questions.
 
-### 3. Build data quality foundations
+### 4. Build data quality foundations
 For every data asset connected to planned AI processing: assess completeness, accuracy, consistency, timeliness, and accessibility. Any data asset with a material deficiency gets a data improvement plan before AI processing is enabled.
 
-### 4. Identify schema inconsistencies
+### 5. Identify schema inconsistencies
 Where the same entities appear in multiple systems with different field names, formats, or values — document it and build a standardisation plan. Agents processing this data will produce unreliable outputs without it.
 
-### 5. Verify backup coverage
+### 6. Verify backup coverage
 Every system that will be connected to AI processing needs to be backed up. This includes OpenBrain when it is deployed. Check the backup schedule, confirm restore testing is happening, and document the DR procedure for any system that does not yet have one.
 
-### 6. Simplify where the audit identified clear wins
+### 7. Simplify where the audit identified clear wins
 Not every simplification opportunity needs to be addressed now. Pick the ones that directly reduce complexity for the systems you are planning to connect to AI. Simplification at this stage pays back in the build step.
 
 ---
@@ -89,6 +102,9 @@ Not every simplification opportunity needs to be addressed now. Pick the ones th
 
 ## Done when
 
+- [ ] Supporting AI agent deployed with clear access boundaries and Open Brain context
+- [ ] Prompt-injection screening enabled for inbound third-party content
+- [ ] Anti-AI quality check added to the drafting workflow for agent output
 - [ ] AUP AI Addendum approved by leadership and distributed to all staff
 - [ ] AI Governance Policy and Data Classification Policy drafted and filed
 - [ ] Staff briefed in person on AI data rules

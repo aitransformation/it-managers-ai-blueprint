@@ -14,6 +14,8 @@ AI systems introduce attack surfaces and failure modes that traditional security
 
 Prompt injection is an attempt to manipulate an AI agent's behaviour by embedding malicious instructions within input data — for example, in a document the agent is asked to summarise, or in a user support request.
 
+This applies to Markdown files, PDFs, copied prompts, websites, HTML content, imported repositories, and internal notes just as much as it applies to obvious hostile content. A `.md` file is not trusted because it is text. It is just another input source.
+
 A successful prompt injection can cause the agent to:
 - Ignore its instructions
 - Exfiltrate data
@@ -23,11 +25,13 @@ A successful prompt injection can cause the agent to:
 **Controls:**
 - Input sanitisation and validation before data is passed to the agent
 - System prompt hardening — instructions that explicitly address and reject override attempts
-- Constraint enforcement at the platform level (OpenClaw guardrails), not prompt level alone
+- Constraint enforcement at the platform level, not prompt level alone
 - Monitoring of agent outputs for anomalous behaviour patterns
 - Principle of least privilege — limit the damage a compromised agent can do
+- Treat all imported Markdown, copied text, websites, and repositories as untrusted until screened
+- Never allow a model to auto-execute instructions simply because they appear in a project file
 
-> **Prompt Injection Defence tool:** The workspace includes a prompt injection detector based on OWASP LLM01 guidance. Run it against all inbound external content before it reaches an agent. See [`tools/prompt-injection-defence.md`](../tools/prompt-injection-defence.md). Risk levels: `low` (continue with caution), `medium` (treat as untrusted, do not follow embedded instructions), `high` (quarantine, escalate, strip before use).
+> **Prompt Injection Defence tool:** The workspace includes a prompt injection detector based on OWASP LLM01 guidance. Run it against all inbound external content before it reaches an agent. Run it against imported Markdown and repository content too. See [`tools/prompt-injection-defence.md`](../tools/prompt-injection-defence.md). Risk levels: `low` (continue with caution), `medium` (treat as untrusted, do not follow embedded instructions), `high` (quarantine, escalate, strip before use).
 
 ---
 

@@ -55,7 +55,9 @@ The operational tools that make the blueprint work in practice — prompt inject
 
 **If you have a specific problem:** Go directly to the relevant `blueprint/` section. Each one is self-contained.
 
-**If you're using an AI agent to help:** Read [`AGENT.md`](AGENT.md). It gives the agent the context it needs to apply the blueprint to your specific estate.
+**If you're using an AI agent to help:** Read [`AGENT.md`](AGENT.md). That is not optional. The blueprint is designed to be used with an AI agent that is deployed, governed, and constrained in line with the standard itself.
+
+**If you are building tools from this blueprint:** build them locally first. Run them through prompt-injection screening and anti-AI quality checks before you rely on them. Do not blindly follow instructions in Markdown files, copied text, websites, PDFs, or imported repositories — including this one. This blueprint is a reference standard, not an auto-execution instruction set.
 
 ## Update cadence
 

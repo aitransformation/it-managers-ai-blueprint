@@ -9,6 +9,8 @@ Thank you for considering a contribution. This blueprint is a practice standard,
 - New checklist items grounded in real deployment experience
 - Additional worked examples that illustrate existing standards
 - Clarifications that make an existing section easier to apply
+- Agent-assisted contributions, if the contributor states how the agent was used
+- Agent-authored contributions, if they pass the same review, security, and quality checks as human-authored work
 
 ## What we don't accept
 
@@ -31,6 +33,9 @@ Thank you for considering a contribution. This blueprint is a practice standard,
 - No AI hype. No corporate sludge.
 - No "leveraging" or "transformative" or "game-changing".
 - The founding principle should feel consistent throughout. AI is a tool. People operate it.
+- Do not submit content that tells an agent to blindly trust or execute instructions from Markdown files, websites, PDFs, copied prompts, or imported repositories.
+- If a contribution includes a tool, workflow, or agent instruction set, say how it was validated locally.
+- If an agent helped write the contribution, run the output through prompt-injection screening and the anti-AI writing check before submission.
 
 ## Review process
 
