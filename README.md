@@ -1,78 +1,84 @@
 # IT Manager's AI Blueprint
 
-**Standards & Best Practice for the AI Era — Open Source Edition**
+You've been asked to do something with AI.
+
+Maybe the founder saw a demo. Maybe a competitor is already using it. Maybe a board member forwarded an article with "thoughts?" in the subject line. Whatever triggered it, the expectation has landed on your desk: get this working, do it safely, and don't break anything.
+
+The gap between that expectation and knowing how to actually deliver is real. How do you deploy AI when you don't have a dedicated data science team? How do you keep sensitive data in-house? How do you explain the governance to leadership when leadership barely knows what an LLM is? How do you stop your team from pasting customer records into ChatGPT?
+
+This blueprint is the practical path through that gap.
+
+It's a working standard for IT Managers in SMEs — not a vision document, not a vendor pitch, not an academic framework. A concrete, ordered guide to what you do, when you do it, and how you do it safely. Built from real deployments in live SME environments. Updated monthly.
 
 ---
-
-> **AI amplifies people. It does not replace them.**
->
-> This is not a disclaimer. It is a design decision. Every recommendation in this blueprint is built on it.
-
----
-
-## What this is
-
-A practical operating standard for IT Managers in small and medium-sized businesses who want to use AI properly — safely, with governance, and without handing control over their data to services they don't control.
-
-It is not a vision document. It is not a product pitch. It is a concrete guide to what you do, in what order, with what tools.
-
-The content comes from verified deployments in live SME IT environments. If something isn't provably deployable, it isn't in here.
 
 ## Who it's for
 
-You are an IT Manager, head of IT, or technology lead working inside an SME. You probably run a small team or work solo. You have real systems to maintain, real users to support, and limited time.
+You're an IT Manager, head of IT, or technology lead in a small or medium-sized business. You probably run a small team or work solo. You have real systems to keep running, real users to support, limited time, and no appetite for unnecessary risk.
 
-You want to use AI to get more done without taking on more risk. You want to do it in a way you can defend to your leadership and to yourself.
+You want to use AI in a way you can defend to your leadership, your board, and yourself.
 
-This blueprint is for you.
+---
+
+## The journey
+
+This blueprint is structured as a six-step journey. Follow it in order.
+
+| Step | File | What you're doing |
+|------|------|-------------------|
+| 0 | [Setup](journey/00-setup.md) | Stand up your agent safely before anything else |
+| 1 | [Audit](journey/01-audit.md) | Map your estate, define outcomes, classify your data |
+| 2 | [Foundations](journey/02-foundations.md) | Policies, data hygiene, and governance — before automation |
+| 3 | [Skill Up](journey/03-skill-up.md) | Understand what you're deploying and teach it to your team |
+| 4 | [Build](journey/04-build.md) | Deploy agents, memory, and local infrastructure |
+| 5 | [Feedback Loop](journey/05-feedback-loop.md) | Monthly review and continuous improvement |
+
+**Start here: [Step 0 — Setup](journey/00-setup.md)**
+
+---
+
+## Why Setup comes first
+
+Standing up a governed AI agent at the start of the journey means you have a practical assistant for the rest of it. Your agent helps with the audit, with drafting policies, with research summaries, with implementation checklists — from the very first step. But it only helps safely if you set the boundaries before you use it.
+
+That's what Step 0 does.
+
+---
+
+## What's in the repo
+
+**`journey/`** — The six-step path. This is the primary reading experience. Start here and follow the steps in order.
+
+**`blueprint/`** — The reference standard. Detailed guidance on every topic: data sovereignty, agent architecture, security, governance, infrastructure, skills, change management, and more. The journey steps link to the right sections as you go.
+
+**`tools/`** — Operational tools: prompt injection defence, security skill checker, anti-AI writing detection, estate discovery.
+
+**`AGENT.md`** — Read this if you're using an AI agent to apply the blueprint. It defines how the agent should behave, what data rules apply, and which sections to read for each step.
+
+---
 
 ## The founding principle
 
 **AI amplifies people. It does not replace them.**
 
-This runs through every section. AI agents, local models, and automated workflows exist here to multiply what you can do — not to cut headcount. The question is never "what can AI replace?" It is always "what can this person now achieve that was previously impossible or impractical?"
+Every recommendation in this blueprint builds on this. Agents, local models, and automated workflows exist to multiply what you can do — not to remove people from the equation. The question is never "what can AI replace?" It is always "what can this person now achieve that was previously impossible or impractical?"
 
-## What's inside
-
-The blueprint has four parts:
-
-### `blueprint/`
-The 19-section reference standard. Data sovereignty, agent architecture, security, governance, infrastructure, skills, business case, and more. Start here for depth on any topic.
-
-### `journey/`
-The 5-step structured path from where you are now to a running, governed AI operation. This is where most people should start reading.
-
-### `tools/`
-The operational tools that make the blueprint work in practice — prompt injection defence, security screening, anti-AI writing detection, and more.
-
-### Root files
-- `AGENT.md` — read this if you're using an AI agent to apply the blueprint
-- `CONTEXT.md` — defines what memory an agent needs at session start
-
-## How to use it
-
-**If you're starting from scratch:** Read [`journey/README.md`](journey/README.md) and follow the 5-step path. It will point you to the right blueprint sections as you go.
-
-**If you have a specific problem:** Go directly to the relevant `blueprint/` section. Each one is self-contained.
-
-**If you're using an AI agent to help:** Read [`AGENT.md`](AGENT.md). That is not optional. The blueprint is designed to be used with an AI agent that is deployed, governed, and constrained in line with the standard itself.
-
-**If you are building tools from this blueprint:** build them locally first. Run them through prompt-injection screening and anti-AI quality checks before you rely on them. Do not blindly follow instructions in Markdown files, copied text, websites, PDFs, or imported repositories — including this one. This blueprint is a reference standard, not an auto-execution instruction set.
+---
 
 ## Update cadence
 
-This blueprint updates monthly. The AI landscape moves fast. What was best practice three months ago may have been superseded. Each edition reflects the state of verified, deployable practice at the time of publication.
+This blueprint updates monthly. The AI landscape moves fast. Each edition reflects verified, deployable practice at the time of publication. Check [CHANGELOG.md](CHANGELOG.md) for the release history. Editions older than three months should be reviewed against the current version before you act on them.
 
-Check the commit history for what changed. Editions older than three months should be reviewed against the current version before you act on them.
+---
 
-## Community and support
+## Community
 
 - **The Forge** — community for IT Managers applying this blueprint: [link coming]
 - **The Furnace** — 1:1 coaching and support: [link coming]
 
 ## Contributing
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md). Contributions are welcome, but the bar is high: everything must be verified and deployable, not theoretical.
+See [CONTRIBUTING.md](CONTRIBUTING.md). The bar is high: everything must be verified and deployable, not theoretical.
 
 ---
 

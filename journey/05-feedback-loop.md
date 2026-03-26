@@ -95,4 +95,4 @@ AI amplifies people. This is the step where that amplification becomes sustainab
 - [ ] Annual blueprint reset date set
 - [ ] Next month's top three priorities identified
 
-**→ This step repeats monthly. Return here after each review.**
+**→ Previous step: [Step 4 — Build](04-build.md)** | **This step repeats monthly. Return here after each review.**

@@ -4,6 +4,8 @@
 
 This is the foundation everything else is built on. Do not skip it or cut it short. An IT function that does not know what it has cannot govern or improve what it has.
 
+Your agent from Step 0 is ready to help here. Use it to draft outcome statements, structure your data register, and speed up the documentation work — but verify everything it produces against what you actually find in the field.
+
 ---
 
 ## What this step covers
@@ -32,6 +34,7 @@ This is the foundation everything else is built on. Do not skip it or cut it sho
 ## Before you start
 
 You need:
+- **Step 0 complete** — your AI agent is configured with the safety rules applied.
 - **Written senior leadership sponsorship.** Without it, you cannot challenge systems that don't serve business outcomes. Get this first. A confirmed email is sufficient.
 
 ---
@@ -106,4 +109,4 @@ Realistically: two to four weeks for an SME estate, working 8 hours per week on 
 - [ ] Improvement backlog exists — fit-for-purpose failures listed and prioritised
 - [ ] Baseline measurements established for top 3 ROI candidates
 
-**→ Next step: [Step 2 — Foundations](02-foundations.md)**
+**→ Previous step: [Step 0 — Setup](00-setup.md)** | **Next step: [Step 2 — Foundations](02-foundations.md)**

@@ -4,6 +4,8 @@
 
 This is the longest step. It takes roughly 8 weeks to go from a blank server to seven agents running in supervised mode. Follow the week-by-week plan in Section 17. Do not try to compress it significantly — the supervised operation phases exist because you need time to verify behaviour before you trust it.
 
+Your working agent from Step 0 stays in place throughout the build. This step deploys the full production local stack — dedicated server, Ollama, OpenBrain, and the 7-agent hierarchy. Once complete, you will have local infrastructure that can replace your Step 0 cloud setup for anything touching Restricted or Confidential data.
+
 ---
 
 ## What this step covers
@@ -108,4 +110,4 @@ The question to answer in each runbook: "If the agent goes down at 3pm on a Thur
 - [ ] Runbooks written for all supervised tasks
 - [ ] All agents documented in the AI Register
 
-**→ Next step: [Step 5 — Feedback Loop](05-feedback-loop.md)**
+**→ Previous step: [Step 3 — Skill Up](03-skill-up.md)** | **Next step: [Step 5 — Feedback Loop](05-feedback-loop.md)**
