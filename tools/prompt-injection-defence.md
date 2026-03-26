@@ -27,15 +27,15 @@ This is the primary defence against prompt injection via documents, web content,
 
 ---
 
-## Workspace skill path
+## Repository source path
 
 ```
-/home/nick-butcher/.openclaw/workspace/ops/PROMPT_INJECTION_DEFENCE.md
+ops/PROMPT_INJECTION_DEFENCE.md
 ```
 
 The detector script is at:
 ```
-/home/nick-butcher/.openclaw/workspace/tools/prompt_injection_detector.py
+tools-src/prompt_injection_detector.py
 ```
 
 ---

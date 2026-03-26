@@ -24,15 +24,15 @@ Performs a pre-install and pre-run security review for every third-party skill o
 
 ---
 
-## Workspace skill path
+## Repository skill path
 
 ```
-/home/nick-butcher/.openclaw/workspace/skills/security-skill-checker/SKILL.md
+skills/security-skill-checker/SKILL.md
 ```
 
 The checker script is at:
 ```
-/home/nick-butcher/.openclaw/workspace/skills/security-skill-checker/scripts/check_skills.py
+skills/security-skill-checker/scripts/check_skills.py
 ```
 
 ---
@@ -51,7 +51,7 @@ python3 skills/security-skill-checker/scripts/check_skills.py --path <skills-roo
 
 Record the result in:
 ```
-/home/nick-butcher/.openclaw/workspace/ops/SKILL_SECURITY_REGISTRY.json
+ops/SKILL_SECURITY_REGISTRY.json
 ```
 
 **Decision policy:**

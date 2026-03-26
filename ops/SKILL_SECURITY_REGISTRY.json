@@ -1,0 +1,111 @@
+{
+  "policy": {
+    "default": "No third-party skill may be installed/used until security check result is PASS (or explicit exception approved).",
+    "lastUpdated": "2026-02-14"
+  },
+  "downloadedSkills": [
+    {
+      "name": "qmd",
+      "source": "https://github.com/tobi/qmd",
+      "checkedAt": "2026-03-16",
+      "status": "WARN",
+      "summary": "Repo appears clean overall and automated checker passed, but QMD supports config-driven shell execution via collection `update` commands (`bash -c`). Safe for trusted local use, but treat collection configs as code.",
+      "findings": [
+        {
+          "severity": "medium",
+          "type": "config-driven shell execution",
+          "evidence": "src/cli/qmd.ts:523-547 runs yaml collection update commands via bash -c"
+        }
+      ],
+      "mitigations": [
+        "Only use trusted local QMD config files/collections",
+        "Do not accept unreviewed `update:` commands in qmd YAML config",
+        "Prefer using QMD for search/indexing only unless you explicitly need update hooks"
+      ],
+      "recommendation": "Approved for cautious use with mitigation; do not treat untrusted configs as safe data."
+    },
+    {
+      "name": "capability-evolver",
+      "source": "clawhub:capability-evolver",
+      "checkedAt": "2026-03-16",
+      "status": "FAIL",
+      "summary": "Not malicious-looking, but too powerful/risky for default use: self-modifying behavior, external network sync, automated code changes, rollback/destructive git operations, and dependency healing via npm.",
+      "findings": [
+        {
+          "severity": "high",
+          "type": "self-modification + code mutation",
+          "evidence": "SKILL.md declares writes to workspace/src/** and describes autonomous evolution/solidification"
+        },
+        {
+          "severity": "high",
+          "type": "destructive rollback operations",
+          "evidence": "SKILL.md and source reference git reset --hard / git clean -fd"
+        },
+        {
+          "severity": "high",
+          "type": "external network/task sync",
+          "evidence": "SKILL.md uses evomap.ai A2A endpoints and optional GitHub/memory graph publishing"
+        }
+      ],
+      "mitigations": [
+        "Do not enable in this workspace for routine use",
+        "Only evaluate in isolated sandbox if ever tested",
+        "Do not grant secrets or write access to production repos"
+      ],
+      "recommendation": "Do not install/use as an active skill in Nick's workspace."
+    },
+    {
+      "name": "humanizer-2",
+      "source": "clawhub:humanizer-2",
+      "checkedAt": "2026-03-16",
+      "status": "PASS",
+      "summary": "Low security risk. Mostly prompt guidance plus local analysis/humanization tooling. Main risk is quality/style overcorrection rather than system compromise.",
+      "findings": [
+        {
+          "severity": "low",
+          "type": "content quality risk",
+          "evidence": "Skill encourages 'personality injection' including strategic typos/tangents in some contexts"
+        }
+      ],
+      "mitigations": [
+        "Use for editing, not as an always-on writing authority without judgment",
+        "Avoid strategic-typo guidance in professional/client-facing copy unless explicitly wanted"
+      ],
+      "recommendation": "Safe to use cautiously as an editing aid."
+    },
+    {
+      "name": "playwright-skill",
+      "source": "clawhub:playwright-skill",
+      "checkedAt": "2026-03-16",
+      "status": "WARN",
+      "summary": "Browser automation is inherently high-impact, and this skill instructs writing/running custom Playwright scripts and installing dependencies. No obvious malicious payload, but it can take real actions on websites.",
+      "findings": [
+        {
+          "severity": "medium",
+          "type": "real-world browser automation",
+          "evidence": "SKILL.md includes login flows, form submission, external-site automation, screenshots, and scripted execution"
+        },
+        {
+          "severity": "medium",
+          "type": "incomplete packaging",
+          "evidence": "Installed package contains docs only (SKILL.md/API_REFERENCE.md) and references run.js/lib helpers not present in package"
+        }
+      ],
+      "mitigations": [
+        "Use only for trusted targets and clearly scoped browser tasks",
+        "Require human intent for any external-site actions or form submissions",
+        "Do not assume the package is turnkey; verify missing runtime pieces before use"
+      ],
+      "recommendation": "Usable with caution for local/test-site automation; not approved as a blind autonomous web actor."
+    }
+  ],
+  "createdSkills": [
+    {
+      "name": "security-skill-checker",
+      "path": "skills/security-skill-checker",
+      "status": "active",
+      "securityChecked": true,
+      "prompt": "Create a skill that scans third-party skills for prompt-injection risk, destructive commands, secret exposure, exfiltration behavior, and privilege escalation; return PASS/WARN/FAIL with evidence and mitigations."
+    }
+  ]
+}

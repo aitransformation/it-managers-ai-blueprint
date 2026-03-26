@@ -30,4 +30,4 @@ These are the operational tools that make the blueprint work in practice. Each t
 
 ## Using tools with an AI agent
 
-Each tool file includes the workspace skill path. When you ask an AI agent to use a tool, it can load the skill and apply it. See [`AGENT.md`](../AGENT.md) for the full session initialisation sequence.
+Each tool file includes the repository skill path. When you ask an AI agent to use a tool, it can load the packaged skill and apply it. See [`AGENT.md`](../AGENT.md) for the full session initialisation sequence.

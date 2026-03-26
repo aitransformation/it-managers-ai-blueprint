@@ -20,15 +20,15 @@ This tool drives Step 1 of the journey. It produces the inputs that everything e
 
 ---
 
-## Workspace skill path
+## Repository skill path
 
 ```
-/home/nick-butcher/.openclaw/workspace/skills/estate-discovery/SKILL.md
+skills/estate-discovery/SKILL.md
 ```
 
 References:
 ```
-/home/nick-butcher/.openclaw/workspace/skills/estate-discovery/references/discovery-checklist.md
+skills/estate-discovery/references/discovery-checklist.md
 ```
 
 ---

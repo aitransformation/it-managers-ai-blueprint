@@ -32,16 +32,16 @@ Detects and removes patterns typical of AI-generated text, then rewrites content
 
 ---
 
-## Workspace skill path
+## Repository skill path
 
 ```
-/home/nick-butcher/.openclaw/workspace/skills/anti-ai-writing/SKILL.md
+skills/anti-ai-writing/SKILL.md
 ```
 
 References:
 ```
-/home/nick-butcher/.openclaw/workspace/skills/anti-ai-writing/references/patterns.md
-/home/nick-butcher/.openclaw/workspace/skills/anti-ai-writing/references/style-rules.md
+skills/anti-ai-writing/references/patterns.md
+skills/anti-ai-writing/references/style-rules.md
 ```
 
 ---
