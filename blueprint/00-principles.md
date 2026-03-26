@@ -61,8 +61,12 @@ It shall be verified, not trusted. The IT Manager's professional judgment remain
 
 ---
 
+## Related operating stance
+
+For the explicit design rules behind this blueprint, read [The 13 Principles](00b-thirteen-principles.md).
+
 ## How this document is structured
 
-This blueprint has 19 sections. Every section references the step of the 5-step journey it belongs to. If you're looking for the practical path through the blueprint, start at [`journey/README.md`](../journey/README.md).
+This blueprint has 19 sections. Every section references the step of the 6-step journey it belongs to. If you're looking for the practical path through the blueprint, start at [`journey/README.md`](../journey/README.md).
 
 Every section also lists relevant tools and skills at the end, pointing to the [`tools/`](../tools/) directory where applicable.

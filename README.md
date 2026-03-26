@@ -63,6 +63,8 @@ That means clear rules, memory, trust boundaries, prompt-injection screening, an
 
 Every recommendation in this blueprint builds on this. Agents, local models, and automated workflows exist to multiply what you can do — not to remove people from the equation. The question is never "what can AI replace?" It is always "what can this person now achieve that was previously impossible or impractical?"
 
+For the full operating stance behind the blueprint, read [The 13 Principles](blueprint/00b-thirteen-principles.md).
+
 ---
 
 ## Current edition

@@ -35,6 +35,8 @@ See [`blueprint/08-local-infrastructure.md`](../blueprint/08-local-infrastructur
 
 Apply these before you use the agent for anything. They are non-negotiable and apply equally to cloud agents and local agents.
 
+For the wider operating stance behind these rules, read [The 13 Principles](../blueprint/00b-thirteen-principles.md).
+
 ### 1. Local-first where practical
 
 Default to local processing. Use local models (via Ollama) for anything touching Restricted or Confidential data. External API calls are only for Internal or Public data, and only where you have confirmed governance in place.

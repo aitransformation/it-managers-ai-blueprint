@@ -21,6 +21,7 @@ Everything in it is verified and deployable. Nothing is theoretical.
 | File | Section | One-line description |
 |------|---------|----------------------|
 | `blueprint/00-principles.md` | Principles | Founding principle, data sovereignty standard, the four core drivers |
+| `blueprint/00b-thirteen-principles.md` | 13 Principles | The explicit operating rules behind the blueprint and agent stack |
 | `blueprint/01-outcome-mapping.md` | 1 | Map every system to a business outcome using the 8-step methodology |
 | `blueprint/02-data-sovereignty.md` | 2 | Data classification framework, local-first architecture, data register |
 | `blueprint/02b-data-access-governance.md` | 2b | Access approval standard, AI register entries, acceptable use policy |
