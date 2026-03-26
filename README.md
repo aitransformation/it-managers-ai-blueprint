@@ -1,14 +1,14 @@
 # IT Manager's AI Blueprint
 
-You've been asked to do something with AI.
+Your founder wants AI. Now.
 
-Maybe the founder saw a demo. Maybe a competitor is already using it. Maybe a board member forwarded an article with "thoughts?" in the subject line. Whatever triggered it, the expectation has landed on your desk: get this working, do it safely, and don't break anything.
+You are the one expected to make sense of the noise, protect the business, stop people doing something stupid, and still show progress. No dedicated AI team. No spare week to sit and think. No appetite for getting this wrong in public.
 
-The gap between that expectation and knowing how to actually deliver is real. How do you deploy AI when you don't have a dedicated data science team? How do you keep sensitive data in-house? How do you explain the governance to leadership when leadership barely knows what an LLM is? How do you stop your team from pasting customer records into ChatGPT?
+That is the gap this blueprint is built for.
 
-This blueprint is the practical path through that gap.
+It is a practical working standard for IT Managers in SMEs. Not a vendor pitch. Not a theory document. Not another pile of generic best practice written for enterprise teams with headcount and budget you do not have.
 
-It's a working standard for IT Managers in SMEs — not a vision document, not a vendor pitch, not an academic framework. A concrete, ordered guide to what you do, when you do it, and how you do it safely. Built from real deployments in live SME environments. Updated monthly.
+It gives you a clear path: what to do first, what to do next, what not to do too early, and how to do the whole thing safely.
 
 ---
 
@@ -39,9 +39,9 @@ This blueprint is structured as a six-step journey. Follow it in order.
 
 ## Why Setup comes first
 
-Standing up a governed AI agent at the start of the journey means you have a practical assistant for the rest of it. Your agent helps with the audit, with drafting policies, with research summaries, with implementation checklists — from the very first step. But it only helps safely if you set the boundaries before you use it.
+If the agent is going to help, it needs to be stood up properly before the real work starts.
 
-That's what Step 0 does.
+That means clear rules, memory, trust boundaries, prompt-injection screening, and a quality gate on what it produces. Once that is in place, the first job it helps with is the audit. From there, it stays with you through the rest of the journey.
 
 ---
 
@@ -65,16 +65,20 @@ Every recommendation in this blueprint builds on this. Agents, local models, and
 
 ---
 
+## Current edition
+
+**March 2026**  
+Latest release tag: `v2026.03`
+
 ## Update cadence
 
-This blueprint updates monthly. The AI landscape moves fast. Each edition reflects verified, deployable practice at the time of publication. Check [CHANGELOG.md](CHANGELOG.md) for the release history. Editions older than three months should be reviewed against the current version before you act on them.
+This blueprint updates monthly. Each edition reflects verified, deployable practice at the time of publication. Check [CHANGELOG.md](CHANGELOG.md) for the release history. Editions older than three months should be reviewed against the current version before you act on them.
 
 ---
 
 ## Community
 
-- **The Forge** — community for IT Managers applying this blueprint: [link coming]
-- **The Furnace** — 1:1 coaching and support: [link coming]
+- **The Forge** — weekly group support for IT Managers implementing the blueprint: [link coming]
 
 ## Contributing
 
